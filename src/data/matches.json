@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "date": "2025-01-15",
+    "venue": "Stade Mohamed V",
+    "teamA_id": 1,
+    "teamB_id": 2,
+    "scoreA": 0,
+    "scoreB": 0
+  },
+  {
+    "id": 2,
+    "date": "2025-01-16",
+    "venue": "Stade de Tanger",
+    "teamA_id": 3,
+    "teamB_id": 4,
+    "scoreA": 0,
+    "scoreB": 0
+  }
+]

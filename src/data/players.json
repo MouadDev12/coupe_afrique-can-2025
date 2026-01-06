@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "team_id": 1,
+    "name": "Brahim Diaz",
+    "position": "Attaquant",
+    "goals": 4,
+    "assists": 3
+  },
+  {
+    "id": 2,
+    "team_id": 2,
+    "name": "Wilfried Zaha",
+    "position": "Attaquant",
+    "goals": 5,
+    "assists": 1
+  }
+]
