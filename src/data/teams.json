@@ -2,42 +2,42 @@
   {
     "id": 1,
     "name": "Maroc",
-    "flagUrl": "/src/assets/images/flags/morocco.png",
+    "flagUrl": "/src/assets/images/flags/morocco.svg",
     "coach": "Walid Regragui",
     "ranking": 35
   },
   {
     "id": 2,
     "name": "Côte d'Ivoire",
-    "flagUrl": "/src/assets/images/flags/cote-divoire.png",
+    "flagUrl": "/src/assets/images/flags/cote-divoire.svg",
     "coach": "Sakou Sanogo",
     "ranking": 22
   },
   {
     "id": 3,
     "name": "Sénégal",
-    "flagUrl": "/src/assets/images/flags/senegal.png",
+    "flagUrl": "/src/assets/images/flags/senegal.svg",
     "coach": "Aliou Cissé",
     "ranking": 18
   },
   {
     "id": 4,
     "name": "Algérie",
-    "flagUrl": "/src/assets/images/flags/algeria.png",
+    "flagUrl": "/src/assets/images/flags/algeria.svg",
     "coach": "Djamel Belmadi",
     "ranking": 28
   },
   {
     "id": 5,
     "name": "Égypte",
-    "flagUrl": "/src/assets/images/flags/egypt.png",
+    "flagUrl": "/src/assets/images/flags/egypt.svg",
     "coach": "Hossam Hassan",
     "ranking": 33
   },
   {
     "id": 6,
     "name": "Nigeria",
-    "flagUrl": "/src/assets/images/flags/nigeria.png",
+    "flagUrl": "/src/assets/images/flags/nigeria.svg",
     "coach": "Finidi George",
     "ranking": 28
   }

@@ -6,17 +6,21 @@
 
 .back-btn {
   display: inline-block;
-  color: #4a7c59;
+  background: linear-gradient(135deg, #e94560, #ff6b6b);
+  color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
 }
 
 .back-btn:hover {
-  background-color: #f0f0f0;
+  background: linear-gradient(135deg, #ff6b6b, #e94560);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
 }
 
 .team-header-detail {
@@ -25,40 +29,59 @@
   gap: 2rem;
   margin-bottom: 3rem;
   padding: 2rem;
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.team-header-detail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #e94560, #ff6b6b, #ffd700);
 }
 
 .team-flag-large {
-  width: 120px;
-  height: 80px;
+  width: 150px;
+  height: 100px;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  border: 3px solid white;
 }
 
 .team-info-detail h1 {
-  color: #2c5530;
+  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-size: 3rem;
   margin: 0 0 1rem 0;
+  font-weight: 900;
 }
 
 .favorite-btn-large {
-  background: linear-gradient(135deg, #2c5530, #4a7c59);
+  background: linear-gradient(135deg, #e94560, #ff6b6b);
   color: white;
   border: none;
   padding: 1rem 2rem;
-  border-radius: 25px;
+  border-radius: 30px;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
 }
 
 .favorite-btn-large:hover {
-  background: linear-gradient(135deg, #4a7c59, #2c5530);
-  transform: translateY(-2px);
+  background: linear-gradient(135deg, #ff6b6b, #e94560);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
 }
 
 .favorite-btn-large.favorited {

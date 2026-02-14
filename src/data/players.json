@@ -9,10 +9,74 @@
   },
   {
     "id": 2,
+    "team_id": 1,
+    "name": "Hakim Ziyech",
+    "position": "Milieu",
+    "goals": 2,
+    "assists": 5
+  },
+  {
+    "id": 3,
+    "team_id": 1,
+    "name": "Yassine Bounou",
+    "position": "Gardien",
+    "goals": 0,
+    "assists": 0
+  },
+  {
+    "id": 4,
     "team_id": 2,
     "name": "Wilfried Zaha",
     "position": "Attaquant",
     "goals": 5,
     "assists": 1
+  },
+  {
+    "id": 5,
+    "team_id": 2,
+    "name": "Sébastien Haller",
+    "position": "Attaquant",
+    "goals": 7,
+    "assists": 2
+  },
+  {
+    "id": 6,
+    "team_id": 3,
+    "name": "Sadio Mané",
+    "position": "Attaquant",
+    "goals": 6,
+    "assists": 4
+  },
+  {
+    "id": 7,
+    "team_id": 3,
+    "name": "Kalidou Koulibaly",
+    "position": "Défenseur",
+    "goals": 2,
+    "assists": 1
+  },
+  {
+    "id": 8,
+    "team_id": 4,
+    "name": "Riyad Mahrez",
+    "position": "Attaquant",
+    "goals": 5,
+    "assists": 6
+  },
+  {
+    "id": 9,
+    "team_id": 5,
+    "name": "Mohamed Salah",
+    "position": "Attaquant",
+    "goals": 8,
+    "assists": 3
+  },
+  {
+    "id": 10,
+    "team_id": 6,
+    "name": "Victor Osimhen",
+    "position": "Attaquant",
+    "goals": 9,
+    "assists": 2
   }
 ]
