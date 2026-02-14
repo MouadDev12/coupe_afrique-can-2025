@@ -7,17 +7,7 @@ Une application web moderne et responsive pour suivre la Coupe d'Afrique des Nat
 ![Vite](https://img.shields.io/badge/Vite-7.2.4-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## 📋 Table des matières
 
-- [Aperçu](#aperçu)
-- [Fonctionnalités](#fonctionnalités)
-- [Technologies utilisées](#technologies-utilisées)
-- [Installation](#installation)
-- [Utilisation](#utilisation)
-- [Structure du projet](#structure-du-projet)
-- [Captures d'écran](#captures-décran)
-- [Contribution](#contribution)
-- [Licence](#licence)
 
 ## 🎯 Aperçu
 
@@ -123,64 +113,11 @@ src/
 └── styles/            # Fichiers CSS
 ```
 
-## 🎨 Captures d'écran
 
-### Page d'accueil
-Interface moderne avec navigation intuitive et design responsive.
 
-### Liste des équipes
-Grille d'équipes avec recherche, drapeaux et système de favoris.
 
-### Détails d'équipe
-Informations complètes : coach, classement FIFA, liste des joueurs.
 
-### Calendrier des matchs
-Vue d'ensemble des rencontres avec dates, lieux et scores.
 
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! Voici comment participer :
-
-1. **Fork** le projet
-2. **Créer** une branche pour votre fonctionnalité
-   ```bash
-   git checkout -b feature/nouvelle-fonctionnalite
-   ```
-3. **Commiter** vos changements
-   ```bash
-   git commit -m "Ajout d'une nouvelle fonctionnalité"
-   ```
-4. **Pousser** vers la branche
-   ```bash
-   git push origin feature/nouvelle-fonctionnalite
-   ```
-5. **Ouvrir** une Pull Request
-
-### Standards de code
-- Utiliser ESLint pour la qualité du code
-- Suivre les conventions de nommage React
-- Ajouter des commentaires pour les fonctions complexes
-- Tester les fonctionnalités avant soumission
-
-## 📝 Roadmap
-
-- [ ] 🔄 Données en temps réel via API
-- [ ] 🌐 Internationalisation (FR/EN/AR)
-- [ ] 📊 Statistiques avancées des joueurs
-- [ ] 🔔 Notifications push pour les matchs
-- [ ] 📱 Application mobile (React Native)
-- [ ] 🎥 Intégration vidéos highlights
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-## 👨‍💻 Auteur
-
-**Votre Nom**
-- GitHub: [@votre-username](https://github.com/votre-username)
-- LinkedIn: [Votre Profil](https://linkedin.com/in/votre-profil)
-- Email: votre.email@example.com
 
 ## 🙏 Remerciements
 
@@ -191,4 +128,3 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ---
 
-⭐ **N'hésitez pas à donner une étoile si ce projet vous plaît !**# coupe_afrique-can-2025
