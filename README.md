@@ -119,6 +119,8 @@ npm run lint             # Vérifie la qualité du code
 ├── vite.config.js       # Configuration Vite
 └── README.md           # Documentation
 ```
+
+```
 │   │   └── matches/
 │   │       └── MatchesList.jsx
 │   └── favorites/     # Système de favoris
@@ -140,12 +142,4 @@ npm run lint             # Vérifie la qualité du code
 
 
 
-## 🙏 Remerciements
-
-- [React](https://reactjs.org/) pour la bibliothèque UI
-- [Redux Toolkit](https://redux-toolkit.js.org/) pour la gestion d'état
-- [Vite](https://vitejs.dev/) pour l'outil de build
-- [CAF](https://www.cafonline.com/) pour les données officielles
-
----
 
