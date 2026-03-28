@@ -30,10 +30,16 @@ Cette application permet aux fans de football de suivre la CAN 2025 avec une int
 - **React Router DOM 7.11.0** - Navigation côté client
 - **CSS3** - Styles modernes avec animations
 
+### Backend
+- **Node.js** - Environnement d'exécution serveur
+- **Express.js** - Framework web minimaliste
+- **CORS** - Gestion des requêtes cross-origin
+
 ### Outils de développement
 - **Vite 7.2.4** - Build tool ultra-rapide
 - **ESLint** - Linting et qualité du code
-- **Node.js** - Environnement d'exécution
+- **Nodemon** - Redémarrage automatique du serveur
+- **Concurrently** - Exécution simultanée frontend/backend
 
 ## 🚀 Installation
 
@@ -52,16 +58,18 @@ Cette application permet aux fans de football de suivre la CAN 2025 avec une int
 2. **Installer les dépendances**
    ```bash
    npm install
+   cd backend && npm install && cd ..
    ```
 
-3. **Démarrer le serveur de développement**
+3. **Démarrer les serveurs de développement**
    ```bash
    npm run dev
    ```
 
 4. **Ouvrir l'application**
    ```
-   http://localhost:5173
+   Frontend: http://localhost:5173
+   Backend API: http://localhost:5000/api
    ```
 
 ## 📖 Utilisation
@@ -70,14 +78,16 @@ Cette application permet aux fans de football de suivre la CAN 2025 avec une int
 
 ```bash
 # Développement
-npm run dev          # Démarre le serveur de développement
+npm run dev              # Démarre frontend et backend simultanément
+npm run dev:frontend     # Démarre seulement le frontend
+npm run dev:backend      # Démarre seulement le backend
 
 # Production
-npm run build        # Génère la version de production
-npm run preview      # Prévisualise la version de production
+npm run build            # Génère la version de production du frontend
+npm run preview          # Prévisualise la version de production
 
 # Qualité du code
-npm run lint         # Vérifie la qualité du code
+npm run lint             # Vérifie la qualité du code
 ```
 
 ### Navigation
@@ -90,14 +100,25 @@ npm run lint         # Vérifie la qualité du code
 ## 📁 Structure du projet
 
 ```
-src/
-├── components/          # Composants réutilisables
-│   ├── Navbar.jsx      # Navigation principale
-│   └── TeamFlag.jsx    # Composant drapeau avec fallback
-├── features/           # Fonctionnalités par domaine
-│   ├── teams/         # Gestion des équipes
-│   │   ├── TeamsList.jsx
-│   │   ├── TeamsDetails.jsx
+├── backend/              # Serveur API
+│   ├── data/            # Données JSON
+│   ├── package.json     # Dépendances backend
+│   └── server.js        # Serveur Express
+├── public/              # Assets statiques
+├── src/                 # Code source frontend
+│   ├── components/      # Composants réutilisables
+│   │   ├── Navbar.jsx   # Navigation principale
+│   │   └── TeamFlag.jsx # Composant drapeau avec fallback
+│   ├── features/        # Fonctionnalités par domaine
+│   │   ├── teams/       # Gestion des équipes
+│   │   └── favorites/   # Système de favoris
+│   ├── store/           # Gestion d'état Redux
+│   └── data/            # Données (maintenant servies par l'API)
+├── .env                 # Variables d'environnement
+├── package.json         # Dépendances frontend
+├── vite.config.js       # Configuration Vite
+└── README.md           # Documentation
+```
 │   │   └── matches/
 │   │       └── MatchesList.jsx
 │   └── favorites/     # Système de favoris

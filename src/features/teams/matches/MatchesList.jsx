@@ -1,21 +1,21 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setMatches } from '../../../store/index';
-import matchesData from '../../../data/matches.json';
-import teamsData from '../../../data/teams.json';
+import { fetchMatches, fetchTeams } from '../../../store/index';
 import './MatchesList.css';
 
 const MatchesList = () => {
   const dispatch = useDispatch();
   const { matches } = useSelector(state => state.matches);
+  const { teams } = useSelector(state => state.teams);
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    dispatch(setMatches(matchesData));
+    dispatch(fetchMatches());
+    dispatch(fetchTeams());
   }, [dispatch]);
 
   const getTeamName = (teamId) => {
-    const team = teamsData.find(t => t.id === teamId);
+    const team = teams.find(t => t.id === teamId);
     return team ? team.name : 'Équipe inconnue';
   };
 

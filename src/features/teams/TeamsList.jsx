@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { setTeams, toggleFavorite } from '../../store/index';
+import { fetchTeams, toggleFavorite } from '../../store/index';
 import TeamFlag from '../../components/TeamFlag.jsx';
-import teamsData from '../../data/teams.json';
 import './TeamsList.css';
 
 const TeamsList = () => {
@@ -13,7 +12,7 @@ const TeamsList = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    dispatch(setTeams(teamsData));
+    dispatch(fetchTeams());
   }, [dispatch]);
 
   const handleToggleFavorite = (teamId) => {

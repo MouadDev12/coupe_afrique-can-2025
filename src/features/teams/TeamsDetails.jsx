@@ -1,27 +1,35 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { setSelectedTeam, toggleFavorite } from '../../store/index';
+import { fetchTeams, fetchPlayers, setSelectedTeam, toggleFavorite } from '../../store/index';
 import TeamFlag from '../../components/TeamFlag.jsx';
-import teamsData from '../../data/teams.json';
-import playersData from '../../data/players.json';
 import './TeamsDetails.css';
 
 const TeamsDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const { selectedTeam } = useSelector(state => state.teams);
+  const { teams, selectedTeam } = useSelector(state => state.teams);
+  const { players } = useSelector(state => state.players);
   const { favoriteTeams } = useSelector(state => state.favorites);
   const [teamPlayers, setTeamPlayers] = useState([]);
 
   useEffect(() => {
-    const team = teamsData.find(t => t.id === parseInt(id));
+    if (teams.length === 0) {
+      dispatch(fetchTeams());
+    }
+    if (players.length === 0) {
+      dispatch(fetchPlayers());
+    }
+  }, [dispatch, teams.length, players.length]);
+
+  useEffect(() => {
+    const team = teams.find(t => t.id === parseInt(id));
     if (team) {
       dispatch(setSelectedTeam(team));
-      const players = playersData.filter(p => p.team_id === parseInt(id));
-      setTeamPlayers(players);
+      const playersForTeam = players.filter(p => p.team_id === parseInt(id));
+      setTeamPlayers(playersForTeam);
     }
-  }, [id, dispatch]);
+  }, [id, teams, players, dispatch]);
 
   const handleToggleFavorite = () => {
     if (selectedTeam) {
