@@ -118,9 +118,6 @@ npm run lint             # Vérifie la qualité du code
 ├── package.json         # Dépendances frontend
 ├── vite.config.js       # Configuration Vite
 └── README.md           # Documentation
-```
-
-```
 │   │   └── matches/
 │   │       └── MatchesList.jsx
 │   └── favorites/     # Système de favoris
